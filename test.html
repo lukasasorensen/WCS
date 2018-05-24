@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.scrollify.js"></script>
+    <script>
+      $(function() {
+        $(".panel").css({"height":$(window).height()});
+        $.scrollify({
+          section : ".panel",
+        });
+      });
+    </script>
+    <style>
+      body{
+          display:block;
+      }
+      .panel{
+
+      }
+      #a{
+        background-color: green;
+        height:100%; width:100%;
+      }
+      #b{
+        background-color: yellow;
+        height:100%; width:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="panel a" data-section-name="a">
+      <div id="a"></div>
+    </section>
+    <section class="panel b" data-section-name="b">
+      <div id="b"></div>
+    </section>
+  </body>
+</html>
